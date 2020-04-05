@@ -1,0 +1,78 @@
+// Colors
+$main_black: #333;
+$secondary_black: rgb(29, 29, 29);
+$white_color: #fff;
+
+@media(max-width: 768px) {
+    .navbar-nav {
+        .nav-item {
+            margin-right: 30px;
+            position: relative;
+            transition: .2s;
+            padding-left: 10px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 0%;
+                right: 50%;
+                height: 2px;
+                border-radius: 30px;
+                background: $main_black;
+                transition: .2s;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 0%;
+                left: 50%;
+                height: 2px;
+                border-radius: 30px;
+                background: $main_black;
+                transition: .2s;
+            }
+
+            &:hover {
+                background: $main_black;
+
+                &::before,
+                &::after {
+                    width: 0% !important;
+                }
+
+                .nav-link {
+                    color: $white_color;
+                }
+            }
+
+            .nav-link {
+                font-weight: 700 !important;
+            }
+        }
+    }
+
+    .home-banner {
+        height: auto !important;
+        padding-top: 30px;
+        padding-bottom: 20px !important;
+    }
+
+    #services {
+        &::before {
+            display: none;
+        }
+
+        .service-card {
+            &.service-card-one {
+                margin-top: 20px !important;
+            }
+
+            &.service-card-two {
+                margin-top: 20px !important;
+            }
+        }
+    }
+}
