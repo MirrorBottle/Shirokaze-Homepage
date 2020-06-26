@@ -1,6 +1,16 @@
 import React, { Component } from 'react'
-
+const isServer = typeof window === 'undefined'
+const WOW = !isServer ? require('wowjs') : null
 export default class Services extends Component {
+    componentDidMount() {
+        new WOW.WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 20,
+            mobile: true,
+            live: false,
+        }).init();
+    }
     render() {
         return (
             <section id="services" className="py-5">
@@ -12,7 +22,7 @@ export default class Services extends Component {
                         </div>
                         <div className="col-md-8 col-12">
                             <div className="row service-row">
-                                <div className="col-md-6 col-12 service-card">
+                                <div className="col-md-6 col-12 service-card wow fadeInUp">
                                     <div className="card">
                                         <div className="card-body">
                                             <h3 className="card-title">
@@ -23,7 +33,7 @@ export default class Services extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-6 col-12 service-card service-card-one">
+                                <div className="col-md-6 col-12 service-card service-card-one wow fadeInUp">
                                     <div className="card">
                                         <div className="card-body">
                                             <h3 className="card-title">
@@ -34,7 +44,7 @@ export default class Services extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-6 col-12 service-card service-card-two">
+                                <div className="col-md-6 col-12 service-card service-card-two wow fadeInUp">
                                     <div className="card">
                                         <div className="card-body">
                                             <h3 className="card-title">

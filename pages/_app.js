@@ -3,8 +3,9 @@ import App from 'next/app';
 import { DefaultSeo } from 'next-seo';
 import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './../node_modules/@fortawesome/fontawesome-free/css/all.css';
-import './../assets/css/style.scss'
-import './../assets/css/responsive.scss'
+import './../assets/css/animate.css';
+import './../assets/css/style.scss';
+import './../assets/css/responsive.scss';
 export default class MyApp extends App {
     render() {
         const { Component, pageProps } = this.props

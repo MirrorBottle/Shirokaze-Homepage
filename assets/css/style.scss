@@ -171,3 +171,37 @@ body {
         }
     }
 }
+
+// About
+#about {
+    margin-bottom: 70px;
+
+    .container {
+        padding-bottom: 20px;
+    }
+
+    .about-school-btn {
+        .card {
+            border: none;
+            box-shadow: -1px -1px 3px rgba(255, 255, 255, 1),
+                2px 2px 6px rgba(0, 0, 0, 0.3);
+            border-radius: 20px !important;
+            color: $main_black;
+
+            &:hover {
+                box-shadow: -1px -1px 3px rgba(255, 255, 255, 1),
+                    2px 2px 6px rgba(0, 0, 0, 0.3),
+                    inset -2px -2px 10px rgba(255, 255, 255, .5),
+                    inset 2px 2px 10px rgba(0, 0, 0, .1);
+            }
+
+            .card-body {
+                padding: 15px 30px;
+
+                h2 {
+                    margin-bottom: 2px !important;
+                }
+            }
+        }
+    }
+}

@@ -31,7 +31,8 @@
   "scripts": {
     "dev": "node server.js -p $PORT",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
+    "export": "npm run build && next export"
   },
   "eslintConfig": {
     "extends": "react-app"
