@@ -7,29 +7,7 @@ const { parsed: localEnv } = require('dotenv').config()
 const webpack = require('webpack')
 
 module.exports = withPlugins([
-    [optimizedImages, {
-        inlineImageLimit: 8192,
-        imagesFolder: 'images',
-        imagesName: '[name]-[hash].[ext]',
-        handleImages: ['jpeg', 'jpg', 'png', 'svg', 'webp', 'gif', 'ico'],
-        optimizeImages: true,
-        optimizeImagesInDev: false,
-        mozjpeg: {
-            quality: 80,
-        },
-        optipng: {
-            optimizationLevel: 3,
-        },
-        pngquant: false,
-        gifsicle: {
-            interlaced: true,
-            optimizationLevel: 3,
-        },
-        webp: {
-            preset: 'default',
-            quality: 75,
-        },
-    }],
+    [optimizedImages],
     [withCSS, {
         webpack: function (config) {
             config.module.rules.push({
