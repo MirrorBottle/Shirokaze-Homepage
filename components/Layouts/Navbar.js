@@ -35,7 +35,7 @@ export default class NavbarComponent extends Component {
             <Navbar color="dark" light expand="md" id="navbar" fixed="top">
                 <div className="container">
                     <NavbarBrand href="/">
-                        <img src="/assets/images/black.png" alt="" className="img-fluid" height="100" />
+                        <img src="/static/black.png" alt="" className="img-fluid" height="100" />
                     </NavbarBrand>
                     <NavbarToggler className={`${this.state.isOpen ? 'active' : ''}`} onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
