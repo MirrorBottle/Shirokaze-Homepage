@@ -10,7 +10,7 @@ module.exports = withPlugins([
     [optimizedImages, {
         webpack: function (config) {
             config.module.rules.push({
-                test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+                test: /\.(png|gif|jpg|jpeg)$/,
                 use: {
                     loader: 'file-loader',
                     options: {
@@ -25,9 +25,9 @@ module.exports = withPlugins([
     [withCSS, {
         webpack: function (config) {
             config.module.rules.push({
-                test: /\.(png|gif|jpg|jpeg)$/,
+                test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
                 use: {
-                    loader: 'file-loader',
+                    loader: 'url-loader',
                     options: {
                         limit: 100000,
                         name: '[name].[ext]'
