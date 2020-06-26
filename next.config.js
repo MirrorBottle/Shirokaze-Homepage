@@ -30,7 +30,21 @@ module.exports = withPlugins([
             quality: 75,
         },
     }],
-    [withCSS], [withFonts], [withSass],
+    [withCSS, {
+        webpack: function (config) {
+            config.module.rules.push({
+                test: /\.(eot|woff|woff2|ttf|svg|png|jpg|gif)$/,
+                use: {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 100000,
+                        name: '[name].[ext]'
+                    }
+                }
+            })
+            return config
+        }
+    }], [withFonts], [withSass],
 ], {
     webpack: (config) => {
         config.module.rules.push({
