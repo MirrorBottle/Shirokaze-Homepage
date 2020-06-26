@@ -3,7 +3,9 @@ const withCSS = require('@zeit/next-css');
 const withFonts = require('next-fonts');
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
-const withPreCompression = require('@moxy/next-pre-compression');
+const withVideos = require('next-videos');
+const { parsed: localEnv } = require('dotenv').config()
+const webpack = require('webpack')
 
 module.exports = withPlugins([
     [optimizedImages, {
@@ -29,5 +31,29 @@ module.exports = withPlugins([
             quality: 75,
         },
     }],
-    [withCSS], [withFonts], [withSass], [withPreCompression]
-]);
+    [withCSS], [withFonts], [withSass, {
+        exportPathMap: function () {
+            return {
+                '/': { page: '/' },
+                '/berita': { page: '/berita' },
+                '/klinik-tani': { page: '/klinik-tani' }
+            }
+        }
+    }], [withVideos],
+], {
+    webpack: (config) => {
+        config.module.rules.push({
+            test: /\.pdf$/,
+            use: 'url-loader'
+        })
+
+        // if (!isServer) {
+        //     config.node = {
+        //         fs: 'empty'
+        //     }
+        // }
+
+        config.plugins.push(new webpack.EnvironmentPlugin(localEnv))
+        return config
+    }
+});
