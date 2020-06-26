@@ -20,7 +20,7 @@
     "next-optimized-images": "^2.5.7",
     "next-routes": "^1.4.2",
     "next-seo": "^4.4.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-flip-toolkit": "^7.0.9",
@@ -32,7 +32,8 @@
     "dev": "node server.js -p $PORT",
     "start": "next start",
     "build": "next build",
-    "export": "npm run build && next export"
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
   },
   "eslintConfig": {
     "extends": "react-app"

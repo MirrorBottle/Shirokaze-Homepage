@@ -3,7 +3,6 @@ const withCSS = require('@zeit/next-css');
 const withFonts = require('next-fonts');
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
-const withVideos = require('next-videos');
 const { parsed: localEnv } = require('dotenv').config()
 const webpack = require('webpack')
 
@@ -31,15 +30,7 @@ module.exports = withPlugins([
             quality: 75,
         },
     }],
-    [withCSS], [withFonts], [withSass, {
-        exportPathMap: function () {
-            return {
-                '/': { page: '/' },
-                '/berita': { page: '/berita' },
-                '/klinik-tani': { page: '/klinik-tani' }
-            }
-        }
-    }], [withVideos],
+    [withCSS], [withFonts], [withSass],
 ], {
     webpack: (config) => {
         config.module.rules.push({
