@@ -25,7 +25,7 @@ module.exports = withPlugins([
     [withCSS, {
         webpack: function (config) {
             config.module.rules.push({
-                test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+                test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg|png)(\?.*$|$)/,
                 use: {
                     loader: 'url-loader',
                     options: {
@@ -43,7 +43,14 @@ module.exports = withPlugins([
             test: /\.pdf$/,
             use: 'url-loader'
         })
-
+        config.module.rules.push({
+            test: /\.(png|gif|jpg|jpeg)$/,
+            use: 'url-loader'
+        })
+        config.module.rules.push({
+            test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+            use: 'url-loader'
+        })
         // if (!isServer) {
         //     config.node = {
         //         fs: 'empty'
