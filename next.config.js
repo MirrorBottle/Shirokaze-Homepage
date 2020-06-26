@@ -25,9 +25,9 @@ module.exports = withPlugins([
     [withCSS, {
         webpack: function (config) {
             config.module.rules.push({
-                test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+                test: /\.(png|gif|jpg|jpeg)$/,
                 use: {
-                    loader: 'url-loader',
+                    loader: 'file-loader',
                     options: {
                         limit: 100000,
                         name: '[name].[ext]'
