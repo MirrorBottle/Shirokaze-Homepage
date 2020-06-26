@@ -7,7 +7,21 @@ const { parsed: localEnv } = require('dotenv').config()
 const webpack = require('webpack')
 
 module.exports = withPlugins([
-    [optimizedImages],
+    [optimizedImages, {
+        webpack: function (config) {
+            config.module.rules.push({
+                test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        limit: 100000,
+                        name: '[name].[ext]'
+                    }
+                }
+            })
+            return config
+        }
+    }],
     [withCSS, {
         webpack: function (config) {
             config.module.rules.push({
