@@ -8,7 +8,7 @@ export default class About extends Component {
                     <h1 className="display-4 font-weight-bold pt-3">About</h1>
                     <div className="row">
                         <div className="col-md-7 d-none d-md-block d-lg-block d-xl-block">
-                            <img src={require('./../../assets/images/about.svg')} alt="ShiroKaze About" className="img-fluid mt-3" />
+                            <img src='/static/about.svg' alt="ShiroKaze About" className="img-fluid mt-3" />
                         </div>
                         <div className="col-md-5 col-12 text-left">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores adipisci asperiores quis error hic id recusandae minima consequuntur soluta cumque rem suscipit est libero, assumenda natus! Totam amet doloremque praesentium?</p>

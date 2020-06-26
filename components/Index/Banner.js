@@ -28,7 +28,7 @@ export default class Banner extends React.Component {
                             </div>
                         </div>
                         <div className="col-md-7 col-12 d-sm-none d-none d-md-block d-lg-block d-xl-block wow fadeInRight">
-                            <img src={require('./../../assets/images/banner.svg')} alt="ShiroKaze Banner" className="img-fluid w-100 h-100" />
+                            <img src='/static/banner.svg' alt="ShiroKaze Banner" className="img-fluid w-100 h-100" />
                         </div>
                     </div>
                 </div>
