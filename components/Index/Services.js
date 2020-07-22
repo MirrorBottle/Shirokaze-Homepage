@@ -14,49 +14,36 @@ export default class Services extends Component {
     render() {
         return (
             <section id="services" className="py-5">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-4 col-12 d-flex flex-column justify-content-center align-items-center">
-                            <h1 className="display-3 text-center font-weight-bold">What</h1>
-                            <h1 className="display-3 text-center font-weight-bold">We Do</h1>
-                        </div>
-                        <div className="col-md-8 col-12">
-                            <div className="row service-row">
-                                <div className="col-md-6 col-12 service-card wow fadeInUp">
-                                    <div className="card">
-                                        <div className="card-body">
-                                            <h3 className="card-title">
-                                                <i className="fas fa-code"></i>&nbsp;
-                                                Website
-                                            </h3>
-                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 col-12 service-card service-card-one wow fadeInUp">
-                                    <div className="card">
-                                        <div className="card-body">
-                                            <h3 className="card-title">
-                                                <i className="fas fa-gamepad"></i>&nbsp;
-                                                Game
-                                            </h3>
-                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 col-12 service-card service-card-two wow fadeInUp">
-                                    <div className="card">
-                                        <div className="card-body">
-                                            <h3 className="card-title">
-                                                <i className="fas fa-desktop"></i>&nbsp;
-                                                Desktop
-                                            </h3>
-                                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <h1 className="service-title text-muted display-2 font-weight-bold">
+                    What&nbsp;
+                    <span className="d-md-block mt-2 mb-2">We&nbsp;</span>
+                    <span className="d-md-block">Do&nbsp;</span>
+                </h1>
+                <div className="card w-100">
+                    <div className="card-body d-flex justify-content-center flex-column align-items-center">
+                        <h1 className="display-3 service-icon">
+                            <i className="fas fa-gamepad"></i>
+                        </h1>
+                        <h3 className="mt-2 font-weight-bold service-name">Game Development</h3>
+                        <p className="mt-2 text-center service-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem quaerat fuga voluptatum saepe repellat, non sunt totam optio pariatur tempore.</p>
+                    </div>
+                </div>
+                <div className="card w-100">
+                    <div className="card-body d-flex justify-content-center flex-column align-items-center">
+                        <h1 className="display-3 service-icon">
+                            <i className="fas fa-code"></i>
+                        </h1>
+                        <h3 className="mt-2 font-weight-bold service-name">Web Development</h3>
+                        <p className="mt-2 text-center service-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem quaerat fuga voluptatum saepe repellat, non sunt totam optio pariatur tempore.</p>
+                    </div>
+                </div>
+                <div className="card w-100">
+                    <div className="card-body d-flex justify-content-center flex-column align-items-center">
+                        <h1 className="display-3 service-icon">
+                            <i className="fas fa-paint-brush"></i>
+                        </h1>
+                        <h3 className="mt-2 font-weight-bold service-name">UI/UX Design</h3>
+                        <p className="mt-2 text-center service-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem quaerat fuga voluptatum saepe repellat, non sunt totam optio pariatur tempore.</p>
                     </div>
                 </div>
             </section>
