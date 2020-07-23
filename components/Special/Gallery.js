@@ -18,7 +18,7 @@ export default class Gallery extends React.Component {
             <div id="gallery" class="container pb-100">
                 <div className="d-flex align-items-center flex-column justify-content-center">
                     <h1>Gallery</h1>
-                    <p>Di bawah ini adalah kalimat-kalimat yang sudah terkumpul dari teman-teman mu yang tidak memilik akhlak sama sekali.</p>
+                    <p>Potret-potret teman-teman di samarinda, dan tentunya ada kamu di salah satunya.</p>
                 </div>
                 <div class="card-columns mt-4">
                     {Array.from(Array(51).keys()).map((number) => (

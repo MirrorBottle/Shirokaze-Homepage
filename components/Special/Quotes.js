@@ -31,7 +31,7 @@ const quotes = [
     },
     {
         name: "Kyrant",
-        quote: "The days that break you are the days that make you #GGMU",
+        quote: `tetap semangat dil, semoga bahagia di sana dan jangan menyerah jika suatu saat realita tak sesuai ekspetasi, ingat "The days that break you are the days that make you" #GGMU`,
         realName: "Kyrant Benyamin A. Haloho"
     },
     {
@@ -135,6 +135,30 @@ const quotes = [
         name: "orang sabar",
         quote: "Fadhil jangan lupain sahabat yang paling pro bermail ml mu dan aku juga tidak akan melupakan sobat wibuku",
         realName: "M. Rizky Anugerah"
+    },
+    {
+        name: "Hoplophile",
+        quote: `
+            have a safe trip my comrade. jangan lupakan kami sebagaimana kami tidak akan melupakanmu. aku tau perpisahan mungkin berat tetapi dimana ada pertemuan disitu ada perpisahan.
+            
+            jangan lupa "MAKE AQUORS GREAT AGAIN!!!" walaupun saya team Muse hehe
+        `,
+        realName: "Maulana Rumi D. R."
+    },
+    {
+        name: "Kina",
+        quote: `“padil walau kita jarang talking² sedih juga kalau dipaksa pisah, 2× temen aku pindah di tahun² terakhir sekolah. baik² ya, tetep sehat, jangan lupa pake masker, jangan lupa cuci tangan, jangan lupa mandi, i hope we can meet again. always lopeyu”`,
+        realName: "Sakhinahita Isnaini"
+    },
+    {
+        name: "Pida",
+        quote: `Fadil, ntr kalo udh jauh disana, jangan cari umi baru wkwkwk semangat belajarnya, semoga sukses ditempat baru, disenangin banyak orang, semoga kita bisa ketemu lagi. SEE YOU ON TOP 💜`,
+        realName: "Firdha Elma Izah"
+    },
+    {
+        name: "Anggia",
+        quote: `"Kamu it orgnya baik dan kek nya sabar ya 🤔, satu lgi jngan lupaiin RPL 1 yaa, dan semoga ap yg kmu cita" kan bisa tercapai, fightingg 👊. "`,
+        realName: "Anggia Yasmin"
     },
 
 ];
