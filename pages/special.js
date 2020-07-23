@@ -3,7 +3,7 @@ import Navbar from '../components/Layouts/Navbar'
 import Footer from '../components/Layouts/Footer';
 import Banner from '../components/Special/Banner'
 import OpenWords from "../components/Special/OpenWords";
-
+import Quotes from "../components/Special/Quotes";
 export default class index extends Component {
     render() {
         return (
@@ -11,6 +11,7 @@ export default class index extends Component {
                 <Navbar />
                 <Banner />
                 <OpenWords />
+                <Quotes />
                 <Footer />
             </React.Fragment>
         )

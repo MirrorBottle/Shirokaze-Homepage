@@ -14,7 +14,7 @@ export default class OpenWords extends React.Component {
     }
     render() {
         return (
-            <div className="jumbotron jumbotron-fluid bg-white home-banner open-words">
+            <div className="jumbotron jumbotron-fluid bg-white open-words">
                 <div className="container">
                     <div className="col-md-12 col-12 d-flex flex-column wow fadeInDown">
                         <h3 className="font-weight-normal text-center">
