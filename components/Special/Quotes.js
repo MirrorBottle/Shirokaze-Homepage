@@ -168,9 +168,9 @@ export default class Quotes extends React.Component {
                                     </small>
                                 </footer>
                             </blockquote>
-                            <div class="overlay">
+                            {/* <div class="overlay">
                                 <h1>{quote.realName}</h1>
-                            </div>
+                            </div> */}
                         </div>
                     ))}
                 </div>
